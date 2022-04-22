@@ -196,7 +196,7 @@ pub fn try_construct_der_seq<F, E>(callback: F) -> Result<Vec<u8> , E>
 /// ```
 #[derive(Debug)]
 pub struct DERWriter<'a> {
-    buf: &'a mut Vec<u8>,
+    pub buf: &'a mut Vec<u8>,
     implicit_tag: Option<Tag>,
 }
 
